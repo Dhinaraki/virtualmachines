@@ -1,15 +1,7 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-08-01/subscriptionDeploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "resourceGroupName": {
-      "type": "string",
-      "defaultValue": "myResourceGroup"
-    },
-    "location": {
-      "type": "string",
-      "defaultValue": "eastus"
-    },
     "vmName": {
       "type": "string",
       "defaultValue": "basicVM"
@@ -20,24 +12,15 @@
     },
     "adminPassword": {
       "type": "securestring",
-      "defaultValue": "Dhina@346434"
+        "defaultValue": "Dhina@12345"
     }
   },
   "resources": [
     {
-      "type": "Microsoft.Resources/resourceGroups",
-      "apiVersion": "2021-04-01",
-      "name": "[parameters('resourceGroupName')]",
-      "location": "[parameters('location')]"
-    },
-    {
       "type": "Microsoft.Compute/virtualMachines",
       "apiVersion": "2021-07-01",
       "name": "[parameters('vmName')]",
-      "location": "[parameters('location')]",
-      "dependsOn": [
-        "[resourceId('Microsoft.Resources/resourceGroups', parameters('resourceGroupName'))]"
-      ],
+      "location": "[resourceGroup().location]",
       "properties": {
         "hardwareProfile": {
           "vmSize": "Standard_B1s"
