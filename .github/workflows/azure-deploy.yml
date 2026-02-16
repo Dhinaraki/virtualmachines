@@ -23,7 +23,7 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          resourceGroupName: "/subscriptions/d75c0c5c-debd-4cc4-b516-6f2ecb82221a/resourceGroups/myResourceGroup"
+          resourceGroupName: /subscriptions/d75c0c5c-debd-4cc4-b516-6f2ecb82221a/resourceGroups/myResourceGroup
           template: ./vm-template.json
           # No adminUsername/adminPassword here
           # You can pass a parameter file instead if needed:
