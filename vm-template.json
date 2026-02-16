@@ -23,7 +23,7 @@
       "location": "eastus",
       "properties": {
         "hardwareProfile": {
-          "vmSize": "Standard_B1s"
+          "vmSize": "Standard_D2ads_v5"
         },
         "osProfile": {
           "computerName": "[parameters('vmName')]",
