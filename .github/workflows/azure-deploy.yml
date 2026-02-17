@@ -27,4 +27,6 @@ jobs:
             az deployment group create \
               --resource-group myResourceGroup \
               --template-file ./templates/storage.json \
-              --parameters ./templates/storage.parameters.json
+              --parameters ./templates/storage.parameters.json \
+              --template-file ./templates/storage1.json \
+              --parameters ./templates/storage1.parameters.json
