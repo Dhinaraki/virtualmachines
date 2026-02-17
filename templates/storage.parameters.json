@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "location": { "value": "eastus" },
-    "storageAccountName": { "value": "mystorageacct123" },
+    "storageAccountName": { "value": "Dhina34644" },
     "accountType": { "value": "Standard_LRS" },
     "kind": { "value": "StorageV2" },
     "minimumTlsVersion": { "value": "TLS1_2" },
