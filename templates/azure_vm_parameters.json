@@ -1,0 +1,115 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "networkInterfaceName3": {
+      "value": "nic-eastus-3"
+    },
+    "enableAcceleratedNetworking": {
+      "value": true
+    },
+    "subnetId": {
+      "value": "/subscriptions/<subscriptionId>/resourceGroups/my-rg-storage/providers/Microsoft.Network/virtualNetworks/vnet-eastus/subnets/snet-eastus-1"
+    },
+    "virtualMachineName": {
+      "value": "vm-eastus-1"
+    },
+    "virtualMachineName3": {
+      "value": "vm-eastus-3"
+    },
+    "virtualMachineComputerName3": {
+      "value": "vmcomp-eastus-3"
+    },
+    "virtualMachineRG": {
+      "value": "my-rg-storage"
+    },
+    "osDiskType": {
+      "value": "Premium_LRS"
+    },
+    "osDiskDeleteOption": {
+      "value": "Delete"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_DS2_v2"
+    },
+    "nicDeleteOption": {
+      "value": "Delete"
+    },
+    "hibernationEnabled": {
+      "value": false
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPassword": {
+      "value": "P@ssw0rd1234!"
+    },
+    "enablePeriodicAssessment": {
+      "value": "true"
+    },
+    "securityType": {
+      "value": "TrustedLaunch"
+    },
+    "secureBoot": {
+      "value": true
+    },
+    "vTPM": {
+      "value": true
+    },
+    "virtualMachine3Zone": {
+      "value": "1"
+    },
+    "vnetLocation": {
+      "value": "eastus"
+    },
+    "vnetExtendedLocation": {
+      "value": {}
+    },
+    "vnetVirtualNetworkName": {
+      "value": "vnet-eastus"
+    },
+    "vnetTagsByResource": {
+      "value": {}
+    },
+    "vnetProperties": {
+      "value": {
+        "subnets": [
+          {
+            "name": "snet-eastus-1",
+            "properties": {
+              "addressPrefixes": [
+                "172.16.0.0/24"
+              ]
+            }
+          }
+        ],
+        "addressSpace": {
+          "addressPrefixes": [
+            "172.16.0.0/16"
+          ]
+        }
+      }
+    },
+    "vnetNatGatewaysWithNewPublicIpAddress": {
+      "value": []
+    },
+    "vnetNatGatewaysWithoutNewPublicIpAddress": {
+      "value": []
+    },
+    "vnetNatGatewayPublicIpAddressesNewNames": {
+      "value": []
+    },
+    "vnetNetworkSecurityGroupsNew": {
+      "value": []
+    },
+    "vnetResourceGroupName": {
+      "value": "my-rg-storage"
+    },
+    "vnetDeploymentName": {
+      "value": "network-interface-associated-virtual-network-20260218173654"
+    }
+  }
+}
