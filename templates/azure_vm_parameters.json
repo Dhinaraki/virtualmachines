@@ -24,7 +24,7 @@
       "value": "vmcomp-eastus-3"
     },
     "virtualMachineRG": {
-      "value": "my-rg-storage"
+      "value": "myResourceGroup"
     },
     "osDiskType": {
       "value": "Premium_LRS"
