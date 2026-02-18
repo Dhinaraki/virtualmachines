@@ -1,115 +1,127 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "location": {
-      "value": "centralindia"
-    },
-    "networkInterfaceName3": {
-      "value": "nic-eastus-3"
-    },
-    "enableAcceleratedNetworking": {
-      "value": true
-    },
-    "subnetId": {
-      "value": "/subscriptions/d75c0c5c-debd-4cc4-b516-6f2ecb82221a/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-eastus/subnets/snet-eastus-1"
-    },
-    "virtualMachineName": {
-      "value": "vm-eastus-1"
-    },
-    "virtualMachineName3": {
-      "value": "vm-eastus-3"
-    },
-    "virtualMachineComputerName3": {
-      "value": "vmcomp-eastus-3"
-    },
-    "virtualMachineRG": {
-      "value": "myResourceGroup"
-    },
-    "osDiskType": {
-      "value": "Premium_LRS"
-    },
-    "osDiskDeleteOption": {
-      "value": "Delete"
-    },
-    "virtualMachineSize": {
-      "value": "Standard_DS2_v2"
-    },
-    "nicDeleteOption": {
-      "value": "Delete"
-    },
-    "hibernationEnabled": {
-      "value": false
-    },
-    "adminUsername": {
-      "value": "azureuser"
-    },
-    "adminPassword": {
-      "value": "P@ssw0rd1234!"
-    },
-    "enablePeriodicAssessment": {
-      "value": "ImageDefault"
-    },
-    "securityType": {
-      "value": "TrustedLaunch"
-    },
-    "secureBoot": {
-      "value": true
-    },
-    "vTPM": {
-      "value": true
-    },
-    "virtualMachine3Zone": {
-      "value": "3"
-    },
-    "vnetLocation": {
-      "value": "eastus"
-    },
-    "vnetExtendedLocation": {
-      "value": {}
-    },
-    "vnetVirtualNetworkName": {
-      "value": "vnet-eastus"
-    },
-    "vnetTagsByResource": {
-      "value": {}
-    },
-    "vnetProperties": {
-      "value": {
-        "subnets": [
-          {
-            "name": "snet-eastus-1",
-            "properties": {
-              "addressPrefixes": [
-                "172.16.0.0/24"
-              ]
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "centralindia"
+        },
+        "networkInterfaceName3": {
+            "value": "malar302_z3"
+        },
+        "enableAcceleratedNetworking": {
+            "value": true
+        },
+        "subnetId": {
+            "value": "/subscriptions/d75c0c5c-debd-4cc4-b516-6f2ecb82221a/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/snet-centralindia-1"
+        },
+        "publicIpAddressName3": {
+            "value": "malar-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "pipDeleteOption": {
+            "value": "Detach"
+        },
+        "virtualMachineName": {
+            "value": "malar"
+        },
+        "virtualMachineName3": {
+            "value": "malar"
+        },
+        "virtualMachineComputerName3": {
+            "value": "malar"
+        },
+        "virtualMachineRG": {
+            "value": "myResourceGroup"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D4as_v5"
+        },
+        "nicDeleteOption": {
+            "value": "Detach"
+        },
+        "hibernationEnabled": {
+            "value": false
+        },
+        "adminUsername": {
+            "value": "dhina"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "enablePeriodicAssessment": {
+            "value": "ImageDefault"
+        },
+        "securityType": {
+            "value": "TrustedLaunch"
+        },
+        "secureBoot": {
+            "value": true
+        },
+        "vTPM": {
+            "value": true
+        },
+        "virtualMachine3Zone": {
+            "value": "3"
+        },
+        "vnetLocation": {
+            "value": "centralindia"
+        },
+        "vnetExtendedLocation": {
+            "value": {}
+        },
+        "vnetVirtualNetworkName": {
+            "value": "vnet-centralindia"
+        },
+        "vnetTagsByResource": {
+            "value": {}
+        },
+        "vnetProperties": {
+            "value": {
+                "subnets": [
+                    {
+                        "name": "snet-centralindia-1",
+                        "properties": {
+                            "addressPrefixes": [
+                                "172.17.0.0/24"
+                            ]
+                        }
+                    }
+                ],
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "172.17.0.0/16"
+                    ]
+                }
             }
-          }
-        ],
-        "addressSpace": {
-          "addressPrefixes": [
-            "172.16.0.0/16"
-          ]
+        },
+        "vnetNatGatewaysWithNewPublicIpAddress": {
+            "value": []
+        },
+        "vnetNatGatewaysWithoutNewPublicIpAddress": {
+            "value": []
+        },
+        "vnetNatGatewayPublicIpAddressesNewNames": {
+            "value": []
+        },
+        "vnetNetworkSecurityGroupsNew": {
+            "value": []
+        },
+        "vnetResourceGroupName": {
+            "value": "myResourceGroup"
+        },
+        "vnetDeploymentName": {
+            "value": "network-interface-associated-virtual-network-20260218183701"
         }
-      }
-    },
-    "vnetNatGatewaysWithNewPublicIpAddress": {
-      "value": []
-    },
-    "vnetNatGatewaysWithoutNewPublicIpAddress": {
-      "value": []
-    },
-    "vnetNatGatewayPublicIpAddressesNewNames": {
-      "value": []
-    },
-    "vnetNetworkSecurityGroupsNew": {
-      "value": []
-    },
-    "vnetResourceGroupName": {
-      "value": "myResourceGroup"
-    },
-    "vnetDeploymentName": {
-      "value": "network-interface-associated-virtual-network-20260218173654"
     }
-  }
 }
