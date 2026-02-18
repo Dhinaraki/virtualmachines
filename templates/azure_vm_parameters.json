@@ -48,7 +48,7 @@
       "value": "P@ssw0rd1234!"
     },
     "enablePeriodicAssessment": {
-      "value": "true"
+      "value": "ImageDefault"
     },
     "securityType": {
       "value": "TrustedLaunch"
