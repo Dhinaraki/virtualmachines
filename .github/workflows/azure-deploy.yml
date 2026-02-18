@@ -23,8 +23,6 @@ jobs:
         uses: azure/cli@v2
         with:
           inlineScript: |
-            # Create resource group
-            az group create --name myResourceGroup --location eastus
 
             # Deploy VM ARM template
             az deployment group create \
