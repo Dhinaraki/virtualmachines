@@ -60,7 +60,7 @@
       "value": true
     },
     "virtualMachine3Zone": {
-      "value": "1"
+      "value": "3"
     },
     "vnetLocation": {
       "value": "eastus"
