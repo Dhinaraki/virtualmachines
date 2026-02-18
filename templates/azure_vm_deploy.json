@@ -130,7 +130,7 @@
             }
         },
         "vnetResourceGroupName": {
-            "defaultValue": "my-rg-storage",
+            "defaultValue": "myResourceGroup",
             "type": "String"
         },
         "vnetDeploymentName": {

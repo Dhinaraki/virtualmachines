@@ -12,7 +12,7 @@
       "value": true
     },
     "subnetId": {
-      "value": "/subscriptions/<subscriptionId>/resourceGroups/my-rg-storage/providers/Microsoft.Network/virtualNetworks/vnet-eastus/subnets/snet-eastus-1"
+      "value": "/subscriptions/<subscriptionId>/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-eastus/subnets/snet-eastus-1"
     },
     "virtualMachineName": {
       "value": "vm-eastus-1"
@@ -106,7 +106,7 @@
       "value": []
     },
     "vnetResourceGroupName": {
-      "value": "my-rg-storage"
+      "value": "myResourceGroup"
     },
     "vnetDeploymentName": {
       "value": "network-interface-associated-virtual-network-20260218173654"
