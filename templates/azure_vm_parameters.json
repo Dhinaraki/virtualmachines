@@ -12,7 +12,7 @@
       "value": true
     },
     "subnetId": {
-      "value": "/subscriptions/<subscriptionId>/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-eastus/subnets/snet-eastus-1"
+      "value": "/subscriptions/d75c0c5c-debd-4cc4-b516-6f2ecb82221a/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-eastus/subnets/snet-eastus-1"
     },
     "virtualMachineName": {
       "value": "vm-eastus-1"
